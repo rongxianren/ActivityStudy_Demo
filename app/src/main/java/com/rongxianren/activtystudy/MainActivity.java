@@ -43,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void toThirdActivity(View view) {
+        Intent intent = new Intent(this, ThirdActivity.class);
+        startActivity(intent);
+    }
+
     public void goOtherApply(View view) {
         Intent intent = new Intent();
         intent.setAction("com.rongxianren.ipc.bookManagerActivity");

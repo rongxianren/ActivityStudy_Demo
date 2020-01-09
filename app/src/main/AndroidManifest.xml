@@ -17,11 +17,218 @@
             android:launchMode="singleTask"
             android:taskAffinity="com.rongxianren.activity.demo" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+                <!-- needed for aosp-derived ROMs? -->
+
+                <data android:host="*" />
+                <data android:scheme="file" />
+
+                <!-- as seen on openkeychain repo: https://github.com/open-keychain/open-keychain/blob/master/OpenKeychain/src/main/AndroidManifest.xml -->
+
+                <data android:pathPattern="/.*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\.res" />
+                <data android:pathPattern="/.*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbl" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <!-- no mimeType filter, needed for CM-derived ROMs? -->
+
+                <data android:host="*" />
+                <data android:scheme="file" />
+
+                <!-- as seen on openkeychain repo: https://github.com/open-keychain/open-keychain/blob/master/OpenKeychain/src/main/AndroidManifest.xml -->
+
+                <data android:pathPattern="/.*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.fw" />
+                <data android:pathPattern="/.*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft.en" />
+                <data android:pathPattern="/.*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ft" />
+                <data android:pathPattern="/.*\\.res" />
+                <data android:pathPattern="/.*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.res" />
+                <data android:pathPattern="/.*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gps" />
+                <data android:pathPattern="/.*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbw" />
+                <data android:pathPattern="/.*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbz" />
+                <data android:pathPattern="/.*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbl" />
+                <data android:pathPattern="/.*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.pbl" />
+            </intent-filter>
+
+            <!-- to receive the firmwares from the download content provider -->
+
+            <!-- to receive files from the "share" intent -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+
             </intent-filter>
         </activity>
     </application>
