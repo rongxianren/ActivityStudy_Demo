@@ -3,3 +3,6 @@
 
 
 * 2、taskAffinity 的作用
+
+* 3、查看当前任务栈的结构命令
+    * adb shell dumpsys activity
