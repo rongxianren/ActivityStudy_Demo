@@ -1,7 +1,7 @@
 ##### Activity启动模式完全理解学习
 * 1、SingleTask 启动模式的特性
-    * (1) 如果启动指定 singleTask 启动模式的 Activity，则当某后台任务中存在该 Activity 的实例时，整个任务都会转移到前台。
-
+    * (1) 如果启动指定singleTask启动模式的 Activity，则当某后台任务中存在该 Activity 的实例时，<font color="red">整个任务</font>都会转移到前台。
+    * (2) SingleTask 默认具有CleanTop特性
 
 * 2、taskAffinity 的作用
 
