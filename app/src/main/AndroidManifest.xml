@@ -12,19 +12,23 @@
 
         <activity
             android:name=".FourthActivity"
+            android:label="FourthActivity"
             android:launchMode="singleInstance" />
 
         <activity
             android:name=".ThirdActivity"
+            android:label="ThirdActivity"
             android:taskAffinity="com.rongxianren.activity.demo" />
         <activity
             android:name=".SecondActivity"
+            android:label="SecondActivity"
             android:launchMode="singleTask"
             android:taskAffinity="com.rongxianren.activity.demo" />
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

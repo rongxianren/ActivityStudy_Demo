@@ -5,6 +5,11 @@
     * (2) SingleTask 默认具有CleanTop特性
 
 * 2、SingleInstance 启动模式是SingleTask的加强版，任务栈中只允许有一个实例，不允许其他Activity实例共存。
+    * (1) A(应用入口Act)启动B(SingleInstance taskAffinity 跟默认的不一致),home回到launcher,然后再次点击应用icon，此时显示的是A。
+    因为icon入口肯定是启动应用默认的任务栈，此时栈里面只有A,B在另外一个栈里面。要想回到B，切到任务后台点击B对应的任务。
+    * (2) 情况跟(1)一样，不同的是B的taskAffinity跟默认的一样，这种情况下，home键回到launcher,点击icon看到的也是A。
+    但是此时已经无法回到B了，因为后台只有一个任务存在。
+    * (3) 情况跟(2)一样，home回到launcher,然后切到后台任务列表，点击B对应的任务，进入B页面，再点击back按钮，此时回到的launcher页面。
 
 * 3、SingleTop Standard 过于简单不做描述
 
